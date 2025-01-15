@@ -1,0 +1,38 @@
+[project]
+name = "urban-ed-data"
+version = "0.1.0"
+description = "interactive tool using urban institute education data"
+authors = [
+    {name = "alexander macintosh"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "faker (>=33.3.0,<34.0.0)",
+    "numpy (>=2.2.1,<3.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "matplotlib (>=3.10.0,<4.0.0)",
+    "neo4j (>=5.27.0,<6.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "openai (>=1.59.4,<2.0.0)",
+    "weaviate-client (>=4.10.2,<5.0.0)",
+    "faiss-cpu (>=1.9.0.post1,<2.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "asyncio (>=3.4.3,<4.0.0)",
+    "fastapi (>=0.115.6,<0.116.0)",
+    "uvicorn (>=0.34.0,<0.35.0)",
+    "pyvis (>=0.3.2,<0.4.0)",
+    "scipy (>=1.15.0,<2.0.0)",
+    "jinja2 (>=3.1.5,<4.0.0)",
+    "bs4 (>=0.0.2,<0.0.3)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
